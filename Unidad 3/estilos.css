@@ -1,0 +1,56 @@
+* {
+font-family: sans-serif;
+text-align: center;
+list-style: none;
+margin: 0;
+box-sizing: border-box;
+}
+div{
+    background-color: #4b4c5a;
+    color: #fbe4d3;
+}
+img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border:none;
+    object-fit: cover;
+    object-position: top;
+}
+.subtitulo-profesion{
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fbe4d3 ;
+    font-size: 35px;
+}
+.historial{
+    font-size: 35px;
+    margin-bottom:10px;
+}
+h1{
+    text-align:center;
+    font-size:50px;
+    padding-top:20px;
+}
+h2{
+    font-size: 35px;
+    text-align: center;
+    margin-top:40px ;
+    margin-bottom:25px;
+}
+h3{
+    padding: 15px;
+    background-color: #fbe4d3 ;
+    color: #4b4c5a;
+    font-size: 30px;
+    margin-bottom: 20px;  
+}
+p{
+    font-size: 25px;
+    margin-bottom:20px;
+}
+
+ul li{
+    font-size: 25px
+    
+}
