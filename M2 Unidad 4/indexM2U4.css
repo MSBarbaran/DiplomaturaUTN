@@ -1,0 +1,44 @@
+h2{
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.card-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover{
+    transform: scale(1.05);
+}
+
+#equipo{
+    background: #eab97b;
+}
+
+.card-img{
+    height: 300px;
+}
+.btn{
+    background:#eab97b ;
+    border:#eab97b ;
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.btn:hover{
+    background: rgba(0, 0, 0, 0.644);
+}
+footer{
+    background: rgba(0, 0, 0, 0.644);
+    color:#ffffff;
+}
+
+.bi{
+    margin:0 10px;
+    font-size: 30px;
+    color: #ffffff;
+}
+.bi:hover{
+    color:rgba(0, 0, 0, 0.644);
+}
