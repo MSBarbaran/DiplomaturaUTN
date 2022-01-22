@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    
+}
+.header{
+    background:  #0c6c79 ;
+    width: 100%;
+    height: 5.5em;
+    position: fixed;
+}
+header h1{
+    color: white;
+    font-size: 2.0em;
+    font-style: italic;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+}
+.holder{
+    margin: 0 50px;
+}
+
+nav{
+    background-color:#0c6c79;
+    margin-bottom: 2em;
+    float: right;
+    line-height: 50px;
+    margin-top: 20px;
+}
+nav ul{
+    display: flex;
+    list-style: none; /* para sacar los botones de las listas */
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+}
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+nav ul li a.activo{
+    background-color: #4c76a5;
+}
+/* .contenedor{
+    margin:0 150px;
+} */
+footer{
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+/* incio Home */
+ .contenedor .homeimg { /*imagen de portada */
+    display: block;
+    margin: 0 auto;
+    height: max-content;
+    width: auto;
+    overflow: hidden;
+}
+.banner{
+    margin-top: 75px;
+}
+.left{
+    float: left;
+    border:3px solid rgba(0, 0, 0, 0.267);
+    border-radius: 10px 0 ;
+
+    /* border-radius: 1em; */
+}
+
+.right{
+    float: right;
+    border:1px solid rgba(0, 0, 0, 0.267);
+}
+.columnas{
+    overflow: hidden;
+    margin:15px 150px;
+  
+}
+.bienvenidos, .testimonios{
+    box-sizing: border-box;
+}
+
+.bienvenidos{
+    width: 65%;
+    padding: 1em 2em;
+    text-align: justify;
+}
+main h2{
+    color: #4c76a5;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic; 
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.bienvenidos p{
+    color: black;
+    line-height: 1.2em; /* espaciado del texto*/
+}
+
+.testimonios{
+    width: 30%;
+    height: max-content;
+    display: inline-block;
+}
+.testimonio{
+    background-color: #ccc;
+    padding: 1.3em;
+    display: flex;
+    margin:0 0;  
+
+}
+
+.testimonio:nth-child(even){ /* par */
+    background:#c3dbdb;
+}
+
+.testimonio .fas{
+    position: left;
+    margin: 0 10px;
+}
+
+.testimonio .contacto{
+    display: inline-block;
+    margin:0 auto;
+}
+/* Fin Home */
+
+/* Inicio seccion Nosotros */
+.contenedor02{
+    background:url(/VeterinariaX/img/nosotros/fondohuellas.jpg); /*imagen de fondo seccion nosotros */
+    background-position: 10% 25%;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+} 
+.nosotrosimg { /*imagen de portada */
+    display: block;
+    margin: 0 auto;
+    height: max-content;
+    width: auto;
+    overflow: hidden;
+}
+.banner02{
+    height: 260px; 
+}
+.columnas02{
+    display:inline-flex;
+    margin:150px 200px 60px;
+}
+.columnas02 h2{
+    margin:20px auto ;
+    padding-bottom: 20px ;
+    border-bottom: 1px solid gray ;
+}
+    
+.historia{
+    margin:0 60px 0 0; 
+    justify-content: center;
+    text-align: justify;
+    line-height: 1.3em;
+    background-color: rgba(255, 255, 255, 0.507);
+}
+.perfilimg{
+  margin: 1em;
+}
+/* Fin seccion Nosotros */
+/* Inicio seccion Servicios */
+
+
+
+
+/* Fin seccion Servicios */
