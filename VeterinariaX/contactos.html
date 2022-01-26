@@ -23,56 +23,62 @@
 </head>
 
 <body>
-<!-- incio del menu -->
+    <!-- incio del menu -->
     <header class="header">
         <div class="holder">
-            <a href="index.html"><img src="img/logo.png" width="70" alt="Veterinaria"></a>
+            <a href="index.html"><img class="logo" src="img/logo.png" width="70" alt="Veterinaria"></a>
             <h1>Veterinaria </h1>
             <nav>
                 <ul class="menu">
-                    <li><a class="activo" href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="galeria.html">Galeria</a></li>
                     <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a class="activo" href="contactos.html">Contactos</a></li>
                 </ul>
             </nav>
         </div>
-
     </header>
-<!-- fin del menu -->
-<!-- Inicio Home -->
-    <main class="contenedor">
-            <img class="banner" width="100%" src="img/home/img03.jpg" all="banner">
-        <div class="columnas">
-            <div class="bienvenidos left">
-                <h2>Cuidado profesional para tu mascota </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quidem nam voluptatem optio culpa
-                    dicta! Cum facere velit iusto consectetur omnis! Voluptatum voluptas repellat repudiandae sapiente
-                    reprehenderit suscipit quae alias.
-                </p>
-                <br>
-                <p> Cum facere velit iusto consectetur omnis!.
-                </p>
+    <!-- fin del menu -->
+    <!-- inicio Nosotros -->
+    <main class="holder">
+        <div class="nosotros">
+            <div class="contacto izq">
+                <h4>Contacto</h4>
+                <form action="" method="" class="formulario">
+                    <p>
+                        <label for="">Nombre</label>
+                        <input type="text">
+                    </p>
+                    <p>
+                        <label for="">Email</label>
+                        <input type="email">
+                    </p>
+                    <p>
+                        <label for="">Teléfono</label>
+                        <input type="text">
+                    </p>
+                    <p>
+                        <label for="comentario">Comentario</label>
+                        <input id="comentario">
+                    </p>
+                    <p class="acciones"><input type="submit" value="Enviar"> </p>
+                </form>
             </div>
-            <div class="testimonios right">
-                <div class="testimonio ">
-                    <span class="fas fa-phone-volume"></span>
-                    <span class="contacto"> <b>Telefono</b> 9938 399 293</span>
-                </div>
-                <div class="testimonio">
-                    <span class="fas fa-mobile-alt icono"></span>
-                    <span class="contacto"> <b>Movil </b> 387 903 4204</span>
-                </div>
-                <div class="testimonio">
-                    <span class="far fa-envelope icono"></span>
-                    <span class="contacto"> <b> Email </b> mail@veterinaria.com</span>
-                </div>
+            <div class="contacto der">
+                <h4>Otras vias de contacto</h4>
+                <ul>
+                    <li><b>Teléfono</b> 9938 399 293</li>
+                    <li><b>Movil</b> 387 903 4204</li>
+                    <li><b>Email</b> mail@veterinaria.com</li>
+                    <li><b>Facebook</b> veterinariax </li>
+                    <li><b>Instagram</b> veterinariax </li>
+                </ul>
             </div>
         </div>
     </main>
-<!-- Fin Home -->
+    <!-- Fin Nosotros -->
     <footer>
         <p>Diseñado por MSB -&copy;año 2022</p>
     </footer>

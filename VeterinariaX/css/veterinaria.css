@@ -6,49 +6,45 @@
 
 .body{
     font-family: 'Open Sans', sans-serif;
-    margin-left: 10px;
-    
+  
 }
 .header{
     background:  #0c6c79 ;
     width: 100%;
     height: 5.5em;
-    position: fixed;
-}
-header h1{
-    color: white;
-    font-size: 2.0em;
-    font-style: italic;
-    font-weight: 100;
-    display: inline-block;
-    position: relative;
-    bottom: 20px;
-}
-.holder{
-    margin: 0 50px;
+    position: top;
 }
 
+h1{
+    color: white;
+    font-style: italic;
+    font-weight: 100;
+    display: inline-flex
+}
+.holder{
+    margin: 0 50px;  
+    height: 5.5em;  
+   
+}
 nav{
     background-color:#0c6c79;
-    margin-bottom: 2em;
     float: right;
     line-height: 50px;
-    margin-top: 20px;
+     /*margin-top: 20px; */
+      /* margin-bottom: 2em; */
 }
 nav ul{
     display: flex;
     list-style: none; /* para sacar los botones de las listas */
-    margin: 0;
-    padding: 0;
 }
-nav ul li{
-    display: inline-block;
-}
+
 nav ul li a{
     color: white;
     text-decoration: none;
-    text-align: center;
-    display: inline-block;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     width: 100px;
 }
 nav ul li a:hover{
@@ -66,24 +62,16 @@ footer{
     color: #333;
     padding: 10px 0;
     text-align: center;
+    position: end;
 }
-/* incio Home */
- .contenedor .homeimg { /*imagen de portada */
-    display: block;
-    margin: 0 auto;
-    height: max-content;
-    width: auto;
-    overflow: hidden;
-}
-.banner{
-    margin-top: 75px;
+/* incio Home */ 
+.banner{ /*imagen de portada */
+ overflow: hidden;
 }
 .left{
     float: left;
     border:3px solid rgba(0, 0, 0, 0.267);
     border-radius: 10px 0 ;
-
-    /* border-radius: 1em; */
 }
 
 .right{
@@ -91,8 +79,7 @@ footer{
     border:1px solid rgba(0, 0, 0, 0.267);
 }
 .columnas{
-    overflow: hidden;
-    margin:15px 150px;
+    margin:10px 150px;
   
 }
 .bienvenidos, .testimonios{
@@ -119,8 +106,7 @@ main h2{
 
 .testimonios{
     width: 30%;
-    height: max-content;
-    display: inline-block;
+   
 }
 .testimonio{
     background-color: #ccc;
@@ -152,6 +138,7 @@ main h2{
     background-size: 160%;
     background-repeat: no-repeat;
     background-attachment: fixed; 
+    height: max-content;
 } 
 .nosotrosimg { /*imagen de portada */
     display: block;
@@ -165,7 +152,8 @@ main h2{
 }
 .columnas02{
     display:inline-flex;
-    margin:150px 200px 60px;
+    margin: 60px 200px;
+    overflow: hidden;
 }
 .columnas02 h2{
     margin:20px auto ;
@@ -185,8 +173,60 @@ main h2{
 }
 /* Fin seccion Nosotros */
 /* Inicio seccion Servicios */
+.contenedor03{
+    background:url(/VeterinariaX/img/nosotros/fondohuellas.jpg); /*imagen de fondo seccion nosotros */
+    background-position: 10% 25%;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
+    height: max-content;
+}
+.tarjetas{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    position: static;
+    overflow: hidden;
+    margin: 54px 90px;
+    }
 
+.servicio{
+   width: 30%;
+   padding: 1em;
+   border: 1px solid rgba(51, 51, 51, 0.171);
+   background: rgba(255, 255, 255, 0.801);
+}
+.servicio h4{
+    margin:5px;
+    font-size: 20px;
+}
 
-
-
+.servicio:hover{
+    background: rgba(0, 0, 0, 0.349);    
+}
+.icono{
+    width: 20%;
+    margin: 5px;
+}
 /* Fin seccion Servicios */
+/* Inicio seccion Contactos*/
+.nosotros{
+ background: #0c6c79;
+ margin: 300px;
+}
+.contacto{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 30px;
+}
+
+/* Fin seccion Contactos*/
