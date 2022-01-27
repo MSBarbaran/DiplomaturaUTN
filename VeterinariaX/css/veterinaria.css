@@ -6,6 +6,7 @@
 
 .body{
     font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px ;
   
 }
 .header{
@@ -15,22 +16,25 @@
     position: top;
 }
 
-h1{
+.header h1{
     color: white;
     font-style: italic;
     font-weight: 100;
-    display: inline-flex
+    display: inline-block;
+    vertical-align: bottom;
 }
 .holder{
     margin: 0 50px;  
-    height: 5.5em;  
-   
+    height: 5.5em; 
+}
+.holder img{
+    margin:auto;
 }
 nav{
     background-color:#0c6c79;
     float: right;
     line-height: 50px;
-     /*margin-top: 20px; */
+    margin-top: 20px;
       /* margin-bottom: 2em; */
 }
 nav ul{
@@ -53,16 +57,16 @@ nav ul li a:hover{
 nav ul li a.activo{
     background-color: #4c76a5;
 }
-/* .contenedor{
-    margin:0 150px;
-} */
 footer{
     background-color: #ccc;
     clear: both;
     color: #333;
     padding: 10px 0;
     text-align: center;
-    position: end;
+    /* para que el footer quede siempre abajo */
+    position: absolute;
+    bottom: 0;
+    width: 100%;  
 }
 /* incio Home */ 
 .banner{ /*imagen de portada */
@@ -105,17 +109,14 @@ main h2{
 }
 
 .testimonios{
-    width: 30%;
-   
+    width: 30%; 
 }
 .testimonio{
     background-color: #ccc;
     padding: 1.3em;
     display: flex;
     margin:0 0;  
-
 }
-
 .testimonio:nth-child(even){ /* par */
     background:#c3dbdb;
 }
@@ -139,6 +140,7 @@ main h2{
     background-repeat: no-repeat;
     background-attachment: fixed; 
     height: max-content;
+    
 } 
 .nosotrosimg { /*imagen de portada */
     display: block;
@@ -152,7 +154,7 @@ main h2{
 }
 .columnas02{
     display:inline-flex;
-    margin: 60px 200px;
+    margin: 50px 200px;
     overflow: hidden;
 }
 .columnas02 h2{
@@ -191,7 +193,7 @@ main h2{
     text-align: center;
     position: static;
     overflow: hidden;
-    margin: 54px 90px;
+    margin: 50px 120px;
     }
 
 .servicio{
@@ -213,10 +215,49 @@ main h2{
     margin: 5px;
 }
 /* Fin seccion Servicios */
+/* inicio Galeria */
+.contenedor04{
+    margin:30px 150px;
+}
+.galeria {
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.foto{
+  width: 19%;
+  margin: 0.6em;
+}
+.foto img:hover{
+  background: #0c6c7949;
+  transition: 0.2s;
+  box-sizing: border-box;
+}
+.foto img{
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+}
+/*Fin Galeria  */
+/*Inicio Novedades */
+.contenedor05{
+    margin: 50px 170px;
+}
+.novedad{
+   border-bottom:rgb(243, 0, 0);
+}
+p .novedad{
+  margin-top:1em;
+  ;
+}
+/*Fin Novedades */
 /* Inicio seccion Contactos*/
 .nosotros{
- background: #0c6c79;
- margin: 300px;
+    background: #0c6c79;
+    margin: 300px;
 }
 .contacto{
     display: inline-flex;
