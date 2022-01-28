@@ -42,10 +42,22 @@
     </header>
     <!-- fin del menu -->
     <!-- inicio Nosotros -->
-    <main class="holder">
+    <main class="contenedor06">
         <div class="nosotros">
-            <div class="contacto izq">
-                <h4>Contacto</h4>
+            <div class="contacto-info">
+                <h4>Otras vias de contacto</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> <b>Dirección</b> Av. Vicente Lopez 123</li>
+                    <li><i class="fas fa-phone-volume"></i> <b>Teléfono</b> 9938 399 293</li>
+                    <li><i class="fas fa-mobile-alt"></i> <b>Movil</b> 387 903 4204</li>
+                    <li><i class="far fa-envelope"></i> <b>Email</b>contact@veterinaria.com</li>
+                    <li><i class="fab fa-facebook"></i> <b>Facebook</b> veterinariax </li>
+                    <li><i class="fab fa-twitter"></i> <b>Twitter</b> veterinariax </li>
+                    <li><i class="fab fa-instagram"></i> <b>Instagram</b> veterinariax </li>
+                </ul>
+            </div>
+            <div class="contacto-form">
+                <h4>Contactanos</h4>
                 <form action="" method="" class="formulario">
                     <p>
                         <label for="">Nombre</label>
@@ -60,21 +72,22 @@
                         <input type="text">
                     </p>
                     <p>
-                        <label for="comentario">Comentario</label>
-                        <input id="comentario">
+                        <label for="comentario">Mensaje</label>
+                        <textarea name="comentario" rows="3"></textarea>
                     </p>
-                    <p class="acciones"><input type="submit" value="Enviar"> </p>
+                    <p>
+                        <button type="submit" value="Enviar">
+                            Enviar
+                        </button>
+                    </p>
                 </form>
             </div>
-            <div class="contacto der">
-                <h4>Otras vias de contacto</h4>
-                <ul>
-                    <li><b>Teléfono</b> 9938 399 293</li>
-                    <li><b>Movil</b> 387 903 4204</li>
-                    <li><b>Email</b> mail@veterinaria.com</li>
-                    <li><b>Facebook</b> veterinariax </li>
-                    <li><b>Instagram</b> veterinariax </li>
-                </ul>
+            <!-- aqui va el mapa -->
+            <div class="mapa right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82868.86818406841!2d-0.3576199982722579!3d39.47785766067679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1643064975935!5m2!1ses-419!2sar"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
             </div>
         </div>
     </main>

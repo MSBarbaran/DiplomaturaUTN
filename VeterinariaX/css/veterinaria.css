@@ -247,7 +247,7 @@ main h2{
     margin: 50px 170px;
 }
 .novedad{
-   border-bottom:rgb(243, 0, 0);
+   border-bottom:rgb(7, 247, 255);
 }
 p .novedad{
   margin-top:1em;
@@ -255,19 +255,87 @@ p .novedad{
 }
 /*Fin Novedades */
 /* Inicio seccion Contactos*/
-.nosotros{
-    background: #0c6c79;
-    margin: 300px;
+.contenedor06{
+    max-width: 1125px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
 }
-.contacto{
+.nosotros >*{
+    padding: 5px;
+
+}
+.nosotros{
+    color:#c3dbdb;
+    margin: 1.5em;
+    box-shadow: 0 0 20px 0 rgba(65, 64, 64, 0.425);
+    width: 100%;
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    margin: 0 30px;
 }
+.nosotros h4{
+    text-align: center;
+    font-size: 1.3em;
+    margin: 1em 0;
+}
+.contacto-form{
+    background: #222222;
+    width: 65%;
+}
+.contacto-form form{
+    margin:0;
+    padding: 0 1em 1em;
+}
+.contacto-form form p{
+    margin:0;
+    padding: 0.35em;
+}
+.contacto-form form button,
+.contacto-form form input,
+.contacto-form form textarea{
+    width: 100%;
+    padding: 0.7em;
+    border:none;
+    background: none;
+    outline: 0;
+    border-bottom: 1px solid rgb(0, 183, 255);
+    color:#fff;
+}
+.contacto-form form textarea{
+    resize: none;
+}
+.contacto-form form button{
+    background: #4c76a5;
+    border:0;
+    text-transform: uppercase;
+    margin-top: 0.5em;
+}
+.contacto-form form button:hover{
+    background: #61a54c;
+    color:red;
+    transition: 0.1s;
+}
+.contacto-info{
+    background: #000;
+    width: 35%;
+    
+}
+
+.contacto-info ul,
+.contacto-info p{
+    text-align: left;
+    margin:0 0 10px 0;
+}
+
+.contacto-info li{
+    list-style: none;
+    padding: 0;
+}
+.contacto-info ul li{
+    padding: 0.7em;
+}
+
+
 
 /* Fin seccion Contactos*/
