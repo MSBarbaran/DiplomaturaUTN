@@ -117,8 +117,15 @@ main h2{
     display: flex;
     margin:0 0;  
 }
+.testimonio:hover{
+    background:#393a3a81 ;
+    
+}
 .testimonio:nth-child(even){ /* par */
     background:#c3dbdb;
+}
+.testimonio:nth-child(even):hover{
+    background: #7fb4aa;
 }
 
 .testimonio .fas{
@@ -251,37 +258,45 @@ main h2{
 }
 p .novedad{
   margin-top:1em;
-  ;
 }
 /*Fin Novedades */
 /* Inicio seccion Contactos*/
 .contenedor06{
     max-width: 1125px;
     margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
+    margin-right: auto; 
 }
 .nosotros >*{
-    padding: 5px;
-
+    padding: 2px;
 }
 .nosotros{
     color:#c3dbdb;
-    margin: 1.5em;
+    margin: 2em auto;
     box-shadow: 0 0 20px 0 rgba(65, 64, 64, 0.425);
     width: 100%;
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
+    height: min-content;
 }
 .nosotros h4{
     text-align: center;
-    font-size: 1.3em;
-    margin: 1em 0;
+    font-size: 1.7em;
+    font-weight:lighter;
+    margin: 1em 0 0.3em;
+    
+}
+.nosotros h3{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight:lighter ;
+    margin: 1.5em 0 0.5em;
+    text-decoration: underline;
+
 }
 .contacto-form{
-    background: #222222;
-    width: 65%;
+    background: rgb(39, 39, 39);
+    width: 50%;
 }
 .contacto-form form{
     margin:0;
@@ -290,6 +305,8 @@ p .novedad{
 .contacto-form form p{
     margin:0;
     padding: 0.35em;
+   
+    
 }
 .contacto-form form button,
 .contacto-form form input,
@@ -306,28 +323,27 @@ p .novedad{
     resize: none;
 }
 .contacto-form form button{
-    background: #4c76a5;
+    background:#0c6c79;
     border:0;
     text-transform: uppercase;
     margin-top: 0.5em;
 }
 .contacto-form form button:hover{
     background: #61a54c;
-    color:red;
-    transition: 0.1s;
+    color:#000000;
+    transition: 0.2s;
 }
 .contacto-info{
-    background: #000;
-    width: 35%;
-    
+    background: #111111;
+    width: 30%; 
+    padding: 0 1em;
+    line-height: 1.5em;
 }
-
 .contacto-info ul,
 .contacto-info p{
     text-align: left;
     margin:0 0 10px 0;
 }
-
 .contacto-info li{
     list-style: none;
     padding: 0;
@@ -335,7 +351,4 @@ p .novedad{
 .contacto-info ul li{
     padding: 0.7em;
 }
-
-
-
 /* Fin seccion Contactos*/
