@@ -251,14 +251,32 @@ main h2{
 /*Fin Galeria  */
 /*Inicio Novedades */
 .contenedor05{
-    margin: 50px 170px;
+    margin: 50px 200px;
+    color:#111111;
 }
-.novedad{
-   border-bottom:rgb(7, 247, 255);
+.novedades{
+    border-bottom: 1px solid #0c6c79f3;
+} 
+.novedades h3{
+    font-size: 25px;
+    margin:0.3em 0;
 }
-p .novedad{
-  margin-top:1em;
+.novedades h4{
+    font-size: 20px;
+    margin:0.3em 0;
+} 
+.texto{
+    float: left;
+    padding:1em;
+    border-bottom: 2px solid #0c6c7986;
+    
 }
+.novedad {
+    float: right;
+    margin: 0.6em;
+   
+}
+
 /*Fin Novedades */
 /* Inicio seccion Contactos*/
 .contenedor06{
