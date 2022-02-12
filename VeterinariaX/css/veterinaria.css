@@ -24,7 +24,7 @@
     vertical-align: bottom;
 }
 .holder{
-    margin: 0 50px;  
+    margin: 0 auto;  
     height: 5.5em; 
 }
 .holder img{
@@ -141,13 +141,11 @@ main h2{
 
 /* Inicio seccion Nosotros */
 .contenedor02{
-    background:url(/VeterinariaX/img/nosotros/fondohuellas.jpg); /*imagen de fondo seccion nosotros */
-    background-position: 10% 25%;
-    background-size: 160%;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    height: max-content;
-    
+    background-image:url(/VeterinariaX/img/nosotros/fondohuellas.jpg); /*imagen de fondo seccion nosotros */
+    background-size:170%;
+    background-position: 5% 25%;
+    overflow: auto;
+
 } 
 .nosotrosimg { /*imagen de portada */
     display: block;
@@ -184,12 +182,10 @@ main h2{
 /* Inicio seccion Servicios */
 .contenedor03{
     background:url(/VeterinariaX/img/nosotros/fondohuellas.jpg); /*imagen de fondo seccion nosotros */
-    background-position: 10% 25%;
-    background-size: 160%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size:170%;
+    background-position: 5% 25%;
     overflow: auto;
-    height: max-content;
+  
 }
 .tarjetas{
     display:flex;
