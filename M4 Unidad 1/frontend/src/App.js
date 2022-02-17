@@ -1,3 +1,7 @@
+import Header from './components/layout/Header';
+import Nav from './components/layout/Nav';
+import Footer from './components/layout/Footer';
+
 import { BrowserRouter as Router,Sitch, Route, Switch } from "react-router-dom";
 
 import ContactoPage from './pages/ContactoPage';
@@ -8,8 +12,8 @@ import NovedadesPage from './pages/NovedadesPage';
 function App() {
   return (
     <Router>
-      <Headers/>
-      <Nav />
+      <Header/>
+      <Nav/>
       <Switch>
         <Route path="/" exact component={HomePage}/>
         <Route path="/nosotros" exact component={NosotrosPage}/>
