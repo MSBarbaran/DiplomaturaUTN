@@ -1,10 +1,14 @@
+// estilos css
+import '../styles/components/pages/NosotrosPage.css';
+
+
 import React from 'react';
 
 const NosotrosPage = (props) => {
     return (
         <section className="holder">
             <div className="historia">
-                <h2>historia</h2>
+                <h2>Historia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis
                     facilisis, ultrices ad diam torquent scelerisque a lacinia suspend
                     isse nec, auctor hendrerit posuere magna hac laoreet orci parturie

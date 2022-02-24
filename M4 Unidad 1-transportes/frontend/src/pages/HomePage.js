@@ -1,3 +1,6 @@
+// estilos css
+import '../styles/components/pages/HomePage.css';
+
 import React from 'react';
 
 const HomePage = (props) => {
