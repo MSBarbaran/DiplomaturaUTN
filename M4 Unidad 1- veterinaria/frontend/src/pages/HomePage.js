@@ -1,16 +1,18 @@
+import '../styles/components/pages/HomePage.css'
+
 import React from 'react';
 
 const HomePage = (props) => {
     return (
         <main className="holder">
-            <div className="homeimg">
+            <div className="banner">
                 <img src="img/home/img03.jpg" alt="avion" />
             </div>
             <div className="columnas">
                 <div className="bienvenidos left">
                     <h2>Cuidado profesional para tu mascota</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quidem nam voluptatem optio culpa dicta! Cum facere velit iusto consectetur omnis! Voluptatum voluptas repellat repudiandae sapiente reprehenderit suscipit quae alias.
-                        Cum facere velit iusto consectetur omnis!.
+                    <br /> Cum facere velit iusto consectetur omnis!.
                     </p>
                 </div>
                 <div className="testimonios left">

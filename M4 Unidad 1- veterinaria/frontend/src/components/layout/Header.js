@@ -1,3 +1,6 @@
+// estilos css
+import '../../styles/components/layout/Header.css'
+
 import React from 'react';
 
 const Header = (props) => {
@@ -5,13 +8,14 @@ const Header = (props) => {
         <header>
             <div className="holder">
                 <div className="logo">
-                    <img src="img/logo.png" width="100"
-                        alt="Veterinaria X" />
+                    <img src="img/logo.png" width="100" alt="Veterinaria X" />
                     <h1>Veterinaria X</h1>
                 </div>
             </div>
         </header>
     );
 }
-
 export default Header;
+
+
+

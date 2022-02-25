@@ -1,0 +1,11 @@
+footer{
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+    /* para que el footer quede siempre abajo */
+    position: absolute;
+    bottom: 0;
+    width: 100%;  
+}

@@ -1,0 +1,32 @@
+
+.columnas02{
+   
+    display:inline-flex;
+    margin: 50px 200px;
+    overflow: hidden;
+}
+.columnas02 h2{
+    margin:20px auto ;
+    padding-bottom: 20px ;
+    border-bottom: 1px solid gray ;
+}
+    
+.historia{
+    margin:0 60px 0 0; 
+    justify-content: center;
+    text-align: justify;
+    line-height: 1.3em;
+    background-color: rgba(255, 255, 255, 0.507);
+}
+.historia h2{
+    color: #4c76a5;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic; 
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.perfilimg{
+  margin: 1em;
+  
+}

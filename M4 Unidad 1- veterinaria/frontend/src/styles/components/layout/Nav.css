@@ -1,0 +1,32 @@
+nav{
+    /* background-color:#0c6c79; */
+    position: relative;
+    line-height: 50px;
+    margin-top: -70px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: right;
+    padding-right: 2em;
+      /* margin-bottom: 2em; */
+}
+nav ul{
+    display: flex;
+    list-style: none; /* para sacar los botones de las listas */
+    
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 120px;
+}
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+nav ul li a.activo{
+    background-color: #4c76a5;
+}

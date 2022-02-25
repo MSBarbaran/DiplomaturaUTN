@@ -1,8 +1,13 @@
+
+
+import { BrowserRouter as Router,Sitch, Route, Switch } from "react-router-dom";
+
+import './index.css'
+import './App.css'
+
 import Header from './components/layout/Header';
 import Nav from './components/layout/Nav';
 import Footer from './components/layout/Footer';
-
-import { BrowserRouter as Router,Sitch, Route, Switch } from "react-router-dom";
 
 import ContactoPage from './pages/ContactoPage';
 import HomePage from './pages/HomePage';

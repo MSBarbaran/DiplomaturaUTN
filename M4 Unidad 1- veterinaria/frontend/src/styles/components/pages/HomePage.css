@@ -1,0 +1,72 @@
+    .banner{ /*imagen de portada */
+        overflow: hidden;
+        
+    }
+   .left{
+       float: left;
+       border:3px solid rgba(0, 0, 0, 0.267);
+       border-radius: 10px 0 ;
+   }
+   
+   .right{
+       float: right;
+       border:1px solid rgba(0, 0, 0, 0.267);
+   }
+   .columnas{
+       /* position: absolute; */
+       margin:10px 150px;
+   }
+   .bienvenidos, .testimonios{
+       box-sizing: border-box;
+   }
+   
+   .bienvenidos{
+       width: 63%;
+       padding: 1em 2em;
+       text-align: justify;
+     
+     
+   }
+   main h2{
+       color: #4c76a5;
+       text-align: center;
+       font-size: 30px;
+       font-style: italic; 
+       font-weight: 600;
+       margin-bottom: 12px;
+   }
+   .bienvenidos p{
+       color: black;
+       line-height: 1.2em; /* espaciado del texto*/
+   }
+   
+   .testimonios{
+       width: 30%; 
+       margin-left: 1em;
+   }
+   .testimonio{
+       background-color: #ccc;
+       padding: 1em;
+       display: flex;
+       margin:0 0;  
+   }
+   .testimonio:hover{
+       background:#393a3a81 ;
+       
+   }
+   .testimonio:nth-child(even){ /* par */
+       background:#c3dbdb;
+   }
+   .testimonio:nth-child(even):hover{
+       background: #7fb4aa;
+   }
+   
+   .testimonio .fas{
+       position: left;
+       margin: 0 10px;
+   }
+   
+   .testimonio .contacto{
+       display: inline-block;
+       margin:0 auto;
+   }
