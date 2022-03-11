@@ -1,0 +1,19 @@
+{{!-- a) Recibo el titulo --}}
+<h1>{{title}}</h1>
+
+{{!-- b) Recibo la propiedad 'conocido' --}}
+{{#if conocido}}
+    <p>Hola {{nombre}} <a href="/salir">Salir</a></p>
+{{/if}}
+
+{{!-- c)En el caso de que no este 'conocido' aparece una p y un formulario de contacto para ingresar la info que falta --}}
+{{#unless conocido}}
+    <p>No te conozco</p>
+    <form action="/ingresar" method="post">
+        <input type="text" name="nombre"><button>ingresar</button>
+    </form>
+{{/unless}}
+
+
+
+
