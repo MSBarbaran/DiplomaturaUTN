@@ -22,8 +22,7 @@
   font-style: italic;
   font-weight: 100;
   display: inline-block;
-  vertical-align: bottom;
-  
+  vertical-align: bottom; 
 }
 .holder{
   margin: 0 auto;  
@@ -32,9 +31,8 @@
 .holder img{
   margin:auto;
 }
-/*inicio  formulario */
-
-.container {
+/*inicio  formulario - login.hbs*/
+#formulario{
   display:flex;
   justify-content:center;
   justify-items: center;
@@ -45,26 +43,20 @@
   border-radius: 18px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background: rgba(255, 255, 255, 0.144);
-  box-sizing: content-box;
-}
-.container .row {
-  text-align: center;
-  margin-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 .container .row .icono{
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 0.7rem auto 0;
 }
 .container .row .icono i{
   color: #0c6c79 ;
   font-size: 30px;
-  
 }
 .container .row h2 {
   font-weight: 400;
   font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 1.5rem;
 }
 .container .row form div{
   width: 100%;
@@ -72,34 +64,89 @@
   align-content: center;
  padding-left: 1.2rem;
 }
-
-.container .row input {
+.container .row input,
+.container .row textarea{
   width: 100%;
-    border:none;
-    background: none;
-    outline: 0;
-    border-bottom: 1px solid rgb(0, 183, 255);
-    color:#0a0a0a;
+  border:none;
+  background: none;
+  outline: 0;
+  border-bottom: 1px solid rgb(0, 183, 255);
+  color:#0a0a0a;
 }
-.container .row button {
+.container .row button {  
   background:#0c6c79;
   border:0;
-  margin-top:1.5rem;
+  margin: 1rem 1.5rem  0.5rem ;
   transition: 0.2s;
   width: 80%;
 }
 .container .row button:hover {
   background: #61a54c;
   color:#000000;
-  
 }
 .container .row .error{
-  margin: 0.3rem auto 0;
+  text-align: center;
   font-size: 1rem;
   font-style: italic;
   color: rgb(150, 25, 25);
 }
-/*fin  formulario */
+/*fin  formulario -login.hbs*/
+/*inicio pantalla de novedades -novedades.hbs*/
+#fila2{
+  background: #050505;
+  color:#fff;
+  align-items: center;
+  width: auto;
+  margin: auto;
+}
+.container .row h3{
+  margin: 0.5rem auto;
+}
+
+/*fin pantalla de novedades -novedades.hbs*/
+/*inicio agregar novedad -agregar.hbs*/
+#agregarNovedad {
+  height: 450px;
+  justify-content:center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: rgba(255, 255, 255, 0.144);
+  padding: 1rem 1.5rem;
+  margin: 2rem auto; 
+}
+#agregarNovedad .icono{
+  margin: 1rem auto 1.2rem;
+}
+#agregarNovedad .botonesAgregar{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem; 
+}
+#agregarNovedad .botonesAgregar a{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 1rem 1.5rem 0.5rem auto  ;
+  height:2.25rem;
+  
+}
+#agregarNovedad .botonesAgregar a i{
+ padding-right: 0.5rem;
+}
+
+
+
 footer{
   background-color: #ccc;
   clear: both;

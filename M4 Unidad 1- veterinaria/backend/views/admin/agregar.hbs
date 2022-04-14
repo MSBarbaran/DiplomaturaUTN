@@ -1,0 +1,28 @@
+{{!-- Agregar una novedad --}}
+<div class="container" >
+    <div class="row">
+        <div id="agregarNovedad" class="col-6 offset-3">
+            <div class="icono"><i class="fa-solid fa-file-pen"></i></div>
+            <h4 class="tituloAgregar"> Agregar una novedad</h4>
+            <form action="/admin/novedades/agregar" method="post">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Titulo" name="titulo">
+                </div>
+                 <div class="mb-3">
+                    <textarea type="text" class="form-control" placeholder="Subtitulo" name="subtitulo"></textarea>
+                </div>
+                 <div class="mb-3">
+                    <textarea type="text" class="form-control" placeholder="Cuerpo" name="cuerpo"></textarea>
+                </div>
+                <div class="botonesAgregar">
+                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-check"></i> Guardar </button>
+                    <a href="/admin/novedades" class="btn btn-danger"><i class="fa-solid fa-xmark" aria-hidden="true"></i>   Cancelar</a>
+                </div>
+            </form> 
+            {{!-- habilitamos para que se muestren los mensages de error en caso de que no se haya completado algun campo o que no se pueda conectar al servidor --}}
+            {{#if error}}
+                <p class="error">{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
