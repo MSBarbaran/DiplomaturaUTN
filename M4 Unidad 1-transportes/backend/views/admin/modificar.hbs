@@ -1,0 +1,28 @@
+{{!-- aqui armamos el formulario para modificar  --}}
+<div class="container" style="margin:50px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Modificar una novedad</h4>
+            <form action="/admin/novedades/modificar" method="post">
+                <input type="hidden" value="{{novedad.id}}" name="id"> 
+                <div class="form-group">
+                    <label for="">Titulo</label>
+                    <input type="text" class="form-control" name="titulo" value="{{novedad.titulo}}" placeholder="Titulo">
+                </div>
+                <div class="form-group">
+                    <label for="">Subtitulo</label>
+                    <input type="text" class="form-control" name="subtitulo" value="{{novedad.subtitulo}}" placeholder="Subtitulo">
+                </div>
+                 <div class="form-group">
+                     <label for="">Cuerpo</label>
+                     <textarea  name="cuerpo" class="form-control"  placeholder="Cuerpo">{{novedad.cuerpo}}</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form> 
+            {{!-- habilitamos para que se muestren un mensage de error en caso de que no se haya podido modificar la novedad --}}
+            {{#if error}}
+                <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
