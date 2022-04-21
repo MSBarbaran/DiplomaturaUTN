@@ -1,0 +1,32 @@
+{{!-- aqui armamos el formulario para modificar  --}}
+<div class="container" >
+    <div class="row">
+        <div id="modificarNovedad" class="col-6 offset-3">
+            <div class="icono"><i class="fa-solid fa-pen-to-square"></i></div>
+            <h4 class="tituloModificar">Modificar una novedad</h4>
+            <form action="/admin/novedades/modificar" method="post">
+                <input type="hidden" value="{{novedad.id}}" name="id"> 
+                <div class="mb-3">
+                    <label for="">Titulo</label>
+                    <input type="text" class="form-control" name="titulo" value="{{novedad.titulo}}" placeholder="Titulo">
+                </div>
+                <div class="mb-3">
+                    <label for="">Subtitulo</label>
+                    <input type="text" class="form-control" name="subtitulo" value="{{novedad.subtitulo}}" placeholder="Subtitulo">
+                </div>
+                 <div class="mb-3">
+                     <label for="">Cuerpo</label>
+                     <textarea  name="cuerpo" class="form-control"  placeholder="Cuerpo">{{novedad.cuerpo}}</textarea>
+                </div>
+                <div class="botonesModificar">
+                    <button type="submit" class="btn btn-primary">Modificar</button>
+                    <a href="/admin/novedades" class="btn btn-danger"><i class="fa-solid fa-xmark" aria-hidden="true"></i>   Cancelar</a>
+                </div>
+            </form> 
+            {{!-- habilitamos para que se muestren un mensage de error en caso de que no se haya podido modificar la novedad --}}
+            {{#if error}}
+                <p class="error">{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
