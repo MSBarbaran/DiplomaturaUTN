@@ -3,6 +3,10 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+// imagenes
+var fileUpload = require('express-fileupload');
+// cors para api
+var cors = require('cors');
 
 // Agregamos el siguiente requiere para enlazar el archivo .env: 
 require('dotenv').config();
@@ -17,6 +21,8 @@ var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
 const { cookie } = require('express/lib/response');
 const async = require('hbs/lib/async');
+//  api
+var apiRouter = require('./routes/api');
 
 var app = express();
 
@@ -51,6 +57,12 @@ secured = async (req, res, next) => {
   } // cierre de catch error
 } // cierre de secured
 
+// complemeto imagenes
+app.use(fileUpload({
+  useTempFiles:true,
+  tempFileDir: '/tmp/'
+}));
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -58,8 +70,8 @@ app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
 // complemento de la ruta novedades y secured
 app.use('/admin/novedades',secured, adminRouter);
-
-
+// complemento ruta api
+app.use('/api', cors(), apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
