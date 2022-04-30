@@ -5,7 +5,7 @@ footer{
     padding: 10px 0;
     text-align: center;
     /* para que el footer quede siempre abajo */
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;  
 }

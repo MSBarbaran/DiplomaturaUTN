@@ -4,6 +4,8 @@
     display:inline-flex;
     margin: 50px 200px;
     overflow: hidden;
+    /* background: url(/public/img/nosotros/fondohuellas.jpg); */
+    
 }
 .columnas02 h2{
     margin:20px auto ;
@@ -17,6 +19,7 @@
     text-align: justify;
     line-height: 1.3em;
     background-color: rgba(255, 255, 255, 0.507);
+    
 }
 .historia h2{
     color: #4c76a5;
@@ -28,5 +31,5 @@
 }
 .perfilimg{
   margin: 1em;
-  
+ 
 }

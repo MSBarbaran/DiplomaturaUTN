@@ -2,14 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- 
 }
-
 .body{
   font-family: 'Open Sans', sans-serif;
   padding-bottom: 10px ;
-  
-
 }
 .header{
   background:  #0c6c79 ;
@@ -34,12 +30,13 @@
   margin:auto;
 }
 /*inicio  formulario - login.hbs*/
+
 #formulario{
   display:flex;
   justify-content:center;
   justify-items: center;
   align-items: center;
-  margin: 70px auto auto;
+  margin: 80px auto ;
   width: 290px; 
   height: 350px;
   border-radius: 18px;
@@ -104,11 +101,16 @@
 .container .row h3{
   margin: 0.5rem auto;
 }
-
+/* .container .row .table-dark th{
+  text-align: center;
+} */
+.container .row .table-dark th:nth-of-type(3){
+  text-align:start;
+}
 /*fin pantalla de novedades -novedades.hbs*/
 /*inicio agregar novedad -agregar.hbs*/
 #agregarNovedad {
-  height: 450px;
+  height: 510px;
   justify-content:center;
   justify-items: center;
   align-items: center;
@@ -116,12 +118,31 @@
   border-radius: 18px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background: rgba(255, 255, 255, 0.144);
-  padding: 1rem 1.5rem;
-  margin: 2rem auto; 
+  padding: 0.7rem 1.5rem ;
+  margin: 2rem auto 0.5rem; 
+ 
 }
 #agregarNovedad .icono{
-  margin: 1rem auto 1.2rem;
+  margin: 1rem auto 0.6rem;
 }
+#agregarNovedad .imgsubir{
+padding-left: 1rem; 
+}
+#agregarNovedad .agregarimg{
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+  color: #847592;
+}
+#agregarNovedad .agregarimg #imagen{
+  text-align: left;
+  padding-top: 1rem;
+  padding-left: 0;
+  margin-left: 0;
+}
+
 #agregarNovedad .botonesAgregar{
   display: inline-flex;
   flex-direction: row;
@@ -149,7 +170,7 @@
 /*inicio modificar novedad -modificar.hbs*/
 
 #modificarNovedad{
-  height: 473px;
+  height: 650px;
   width: 600px ;
   justify-content:center;
   justify-items: center;
@@ -190,14 +211,45 @@
   align-items: center;
   text-align: center;
   width: 80%;
-  margin: 1rem 1.5rem 0.5rem auto  ;
+  margin: 1rem 1.5rem 0.5rem auto;
   height:2.25rem;
   
 }
 #modificarNovedad .botonesModificar a i{
  padding-right: 0.5rem;
 }
+#modificarNovedad .imgsubir .agregarimg{
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#modificarNovedad .imgsubir #imagen{
+  text-align: left;
+  padding-top: 1rem;
+}
+#modificarNovedad .imgborrar {
+  display: flex;
+  padding-top: 1rem;
+}
 
+#modificarNovedad .imgborrar label{
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+  font-size: 13.5px;
+}
+
+#modificarNovedad .imgborrar .img_delete{
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  overflow: hidden;
+}
 /*fin modificar novedad -modificar.hbs*/
 
 
@@ -208,10 +260,10 @@ footer{
   padding: 10px 0;
   text-align: center;
   /* para que el footer quede siempre abajo */
-  position:fixed;
+  position:sticky;
   bottom: 0;
   width: 100%;  
 }
 footer p{
-margin: 0.25rem auto;
+margin: 0.1rem auto;
 }

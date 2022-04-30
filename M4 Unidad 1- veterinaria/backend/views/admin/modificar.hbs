@@ -4,7 +4,7 @@
         <div id="modificarNovedad" class="col-6 offset-3">
             <div class="icono"><i class="fa-solid fa-pen-to-square"></i></div>
             <h4 class="tituloModificar">Modificar una novedad</h4>
-            <form action="/admin/novedades/modificar" method="post">
+            <form action="/admin/novedades/modificar" method="post"  enctype="multipart/form-data">
                 <input type="hidden" value="{{novedad.id}}" name="id"> 
                 <div class="mb-3">
                     <label for="">Titulo</label>
@@ -18,6 +18,17 @@
                      <label for="">Cuerpo</label>
                      <textarea  name="cuerpo" class="form-control"  placeholder="Cuerpo">{{novedad.cuerpo}}</textarea>
                 </div>
+                 {{!-- modificar una imagen --}}
+                <div class="mb-3">
+                    <p class="imgsubir">
+                        <label class="agregarimg">Imagen <input type="file" name="imagen" id="imagen" /></label>
+                    </p>
+                    <p class="imgborrar">
+                        <label><input type="checkbox" name="img_delete" id="img_delete" value="1" class="img_delete"> Desea eliminar la imagen actual?</label>
+                        <input type="hidden" name="img_original" value="{{novedad.img_id}}">
+                    </p>
+                </div>
+                {{!-- boton modificar --}}
                 <div class="botonesModificar">
                     <button type="submit" class="btn btn-primary">Modificar</button>
                     <a href="/admin/novedades" class="btn btn-danger"><i class="fa-solid fa-xmark" aria-hidden="true"></i>   Cancelar</a>
